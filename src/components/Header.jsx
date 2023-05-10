@@ -1,19 +1,10 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from "../images/logo.png";
-
-const navigation = [
-  { name: 'Início', href: '/inicio', current: true },
-  { name: 'Sobre', href: '/sobre', current: false },
-  { name: 'Projetos', href: '/projetos', current: false },
-  { name: 'Contato', href: '/contato', current: false },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Header() {
+export default function Header({ navigation }) {
   return (
     <Disclosure as="nav" className="bg-black bg-opacity-50">
       {({ open }) => (
@@ -35,16 +26,9 @@ export default function Header() {
 
               <div className="flex flex-1 items-center justify-between sm:items-stretch">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden rounded-lg"
-                    src={logo}
-                    alt="Nome Ana Luisa"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block rounded-lg"
-                    src={logo}
-                    alt="Nome Ana Luisa"
-                  />
+                  <h1 className="font-bold tracking-tight text-indigo-400 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
+                    Ana Luisa
+                  </h1>
                 </div>
 
                 <div className="hidden sm:ml-6 sm:block">
