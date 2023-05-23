@@ -26,9 +26,11 @@ export default function Header({ navigation }) {
 
               <div className="flex flex-1 items-center justify-between sm:items-stretch">
                 <div className="flex flex-shrink-0 items-center">
-                  <h1 className="font-bold tracking-tight text-indigo-400 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
+                  <a
+                    href="/inicio"
+                    className="font-bold tracking-tight text-indigo-400 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
                     Ana Luisa
-                  </h1>
+                  </a>
                 </div>
 
                 <div className="hidden sm:ml-6 sm:block">

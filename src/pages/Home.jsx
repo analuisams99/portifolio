@@ -4,7 +4,7 @@ import imgFundo from '../images/img_fundo.png';
 import Header from '../components/Header';
 
 const navigation = [
-  { name: 'Início', href: '/inicio', current: true },
+  { name: 'Início', href: '/inicio', current: false },
   { name: 'Sobre', href: '/sobre', current: false },
   { name: 'Habilidades', href: '/habilidades', current: false },
   { name: 'Projetos', href: '/projetos', current: false },
@@ -39,10 +39,12 @@ function Home() {
               Prazer, sou Ana Luisa!
             </h1>
             <h4 className=" text-indigo-400 sm:text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
-              Desenvolvedora Web FullStack.
+              Desenvolvedora Web Full Stack.
             </h4>
             <p className="mt-6 text-lg leading-8 text-white">
-              Sou uma pessoa colaborativa e comprometida em prestar um bom serviço. Gosto de trabalhar em equipe e ajudar no que for necessário. Ansiosa para aplicar minhas habilidades em projetos desafiadores.
+              Sou uma pessoa colaborativa e comprometida em prestar um bom serviço.
+              <br /> Gosto de trabalhar em equipe.
+              Ansiosa para aplicar minhas habilidades em projetos desafiadores.
             </p>
             <div className="mt-6 mb-6 flex items-center justify-center gap-x-6">
               <a
