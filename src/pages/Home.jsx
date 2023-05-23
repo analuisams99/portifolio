@@ -4,7 +4,7 @@ import imgFundo from '../images/img_fundo.png';
 import Header from '../components/Header';
 
 const navigation = [
-  { name: 'Início', href: '/inicio', current: false },
+  { name: 'Início', href: '/inicio', current: true },
   { name: 'Sobre', href: '/sobre', current: false },
   { name: 'Habilidades', href: '/habilidades', current: false },
   { name: 'Projetos', href: '/projetos', current: false },
