@@ -28,7 +28,7 @@ export default function Header({ navigation }) {
                 <div className="flex flex-shrink-0 items-center">
                   <a
                     href="/inicio"
-                    className="font-bold tracking-tight text-indigo-400 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
+                    className="font-bold tracking-tight text-2xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-300 to-blue-500">
                     Ana Luisa
                   </a>
                 </div>

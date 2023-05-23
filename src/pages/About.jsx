@@ -11,9 +11,9 @@ const navigation = [
 ];
 
 const stats = [
-  { name: 'Commits', value: '1.1k +' },
-  { name: 'Horas de estudos em desenvolvimento web', value: '2k +' },
-  { name: 'Projetos', value: '40 +' },
+  { name: 'Commits', value: '+ 1.1 mil' },
+  { name: 'Horas de estudos em desenvolvimento web', value: '+ 2 mil' },
+  { name: 'Projetos', value: '+ 40' },
 ]
 
 export default function About() {
@@ -30,14 +30,19 @@ export default function About() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-black bg-opacity-80 lg:mx-30 m-auto mt-10 p-10 rounded-3xl">
 
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-3xl">
           <h2 className="text-4xl font-bold tracking-tight text-center text-white sm:text-6xl">Sobre mim</h2>
           <p className="mt-6 text-lg text-center leading-8 text-gray-300">
-            Formada em Desenvolvimento de Software Web FullStack na Trybe.
+            Formada em <b>Desenvolvimento de Software Web Full Stack</b> na
+            <a
+              href="https://www.betrybe.com/"
+              className="text-green-200"
+            > Trybe</a>.
             <br />
-            Préviamente formada em Téc. em Administração no IF sul de Minas.
+            Préviamente formada em Técnico em Administração no Instituto Federal do Sul de Minas.
             <br />
-            Sou uma pessoa colaborativa e comprometida em prestar um bom serviço. Gosto de trabalhar em equipe e ajudar no que for necessário.
+            Sou uma pessoa <b>colaborativa</b> e <b>comprometida</b> em prestar um bom serviço.
+            <br />Gosto de <b>trabalhar em equipe</b>.
             <br />
             Estou localizada em Estiva, Minas Gerais, Brasil.
           </p>
@@ -49,13 +54,18 @@ export default function About() {
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse items-center">
                 <dt className="text-base leading-7 text-gray-300 text-center">{stat.name}</dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white text-center">{stat.value}</dd>
+                <a
+                  href="https://github.com/analuisams99"
+                  rel="noreferrer" target="_blank"
+                  className="text-2xl font-bold leading-9 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500 text-center  hover:text-white">
+                  {stat.value}
+                </a>
               </div>
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </div >
 
   );
 }
